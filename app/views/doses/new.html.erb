@@ -1,0 +1,6 @@
+
+<h1>What dose would you like to add?</h1>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.button :submit %>
+<% end %>

@@ -1,6 +1,8 @@
 <h1>Welcome to our cocktail bar</h1>
 <h2>Find the menu</h2>
 
+<ul>
 <% @cocktails.each do |c| %>
-  <p><%= c.name %></p>
+  <li><%= link_to c.name, cocktail_path(c) %></li>
 <% end %>
+</ul>
